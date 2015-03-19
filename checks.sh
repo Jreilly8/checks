@@ -14,7 +14,7 @@ TIMSQL=mysql
 # Step 3 list mysql backup folders (make sure date is correct)
 # Step 4 list contents of latest mysql backup (make sure backups exist)
 
-ls $MAIN/fermat.$TIMFS/ > $CHECKS/fermat_files_dir_list.txt
-ls $MAIN/fermat.$TIMFS/current/var/www/sites/www.treasureislandmedia.com/htdocs/ > $CHECKS/fermat_files_list.txt
+ls $MAIN/fermat.$TIMFS/ > $CHECKS/check_files_dir_list.txt
+ls $MAIN/fermat.$TIMFS/current/var/www/sites/path/htdocs/ > $CHECKS/check_files_list.txt
 ls $MAIN/fermat.$TIMSQL/ > $CHECKS/fermat_mysql_dir_list.txt
-ls "$(\ls -1dt ${MAIN}/backup.${TIMSQL}/* | head -n 1)" > $CHECKS/fermat_mysql_list.txt
+ls "$(\ls -1dt ${MAIN}/backup.${TIMSQL}/* | head -n 1)" > $CHECKS/check_mysql_list.txt
