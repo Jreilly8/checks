@@ -16,5 +16,5 @@ TIMSQL=mysql
 
 ls $MAIN/fermat.$TIMFS/ > $CHECKS/check_files_dir_list.txt
 ls $MAIN/fermat.$TIMFS/current/var/www/sites/path/htdocs/ > $CHECKS/check_files_list.txt
-ls $MAIN/fermat.$TIMSQL/ > $CHECKS/fermat_mysql_dir_list.txt
+ls $MAIN/fermat.$TIMSQL/ > $CHECKS/check_mysql_dir_list.txt
 ls "$(\ls -1dt ${MAIN}/backup.${TIMSQL}/* | head -n 1)" > $CHECKS/check_mysql_list.txt
