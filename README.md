@@ -1,2 +1,2 @@
 # checks
-Shell script to do random vitrification of backup.
+BASH script to do random vitrification of backup.
